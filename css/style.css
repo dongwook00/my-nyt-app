@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-weight: 400;
+  line-height: 1.6; }
+
+.container {
+  max-width: 144rem;
+  margin: 8rem auto; }
+
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; }
+
+.content {
+  padding: 5rem 0;
+  display: flex; }
+
+.most-viewed {
+  display: flex; }
+  .most-viewed__primary {
+    flex: 0 0 80%; }
+  .most-viewed__secondary {
+    flex: 0 0 20%; }

@@ -1,0 +1,29 @@
+.container {
+    max-width: 144rem;
+    margin: 8rem auto;
+}
+
+.header {
+    font-size: 1.4rem;
+    height: 7rem;
+    background-color: #fff;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.content {
+    padding: 5rem 0;
+    display: flex;
+}
+
+.most-viewed {
+    display: flex;
+
+    &__primary {
+        flex: 0 0 80%;
+    }
+
+    &__secondary {
+        flex: 0 0 20%;
+    }
+}
