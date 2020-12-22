@@ -1,0 +1,16 @@
+.menu {
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+
+    &__list--item {
+        margin-right: 3rem;
+
+        & a {
+            text-decoration: none;
+        }
+    }
+
+
+}

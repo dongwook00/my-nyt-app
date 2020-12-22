@@ -1,0 +1,14 @@
+.most-viewed {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+
+    &__primary {
+        flex: 0 0 70%
+    }
+
+    &__secondary {
+        flex: 0 0 30%;
+    }
+}
