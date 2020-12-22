@@ -5,10 +5,25 @@
     font-size: 1.6rem;
 
     &__primary {
-        flex: 0 0 70%
+        display: flex;
+        flex: 0 0 60%;
+        justify-content: space-between;
+        
+        .article__text {
+            flex: 0 0 30%;
+        }
+
+        .article__image {
+            display: flex;
+            flex: 0 0 70%;
+            justify-content: center;
+        }
     }
 
     &__secondary {
-        flex: 0 0 30%;
+        flex: 0 0 40%;
     }
+
+
+
 }

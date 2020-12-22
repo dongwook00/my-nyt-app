@@ -20,7 +20,7 @@ body {
 
 .header {
   font-size: 1.4rem;
-  height: 7rem;
+  height: 8rem;
   background-color: #fff;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -55,6 +55,14 @@ body {
   flex-wrap: wrap;
   font-size: 1.6rem; }
   .most-viewed__primary {
-    flex: 0 0 70%; }
+    display: flex;
+    flex: 0 0 60%;
+    justify-content: space-between; }
+    .most-viewed__primary .article__text {
+      flex: 0 0 30%; }
+    .most-viewed__primary .article__image {
+      display: flex;
+      flex: 0 0 70%;
+      justify-content: center; }
   .most-viewed__secondary {
-    flex: 0 0 30%; }
+    flex: 0 0 40%; }
