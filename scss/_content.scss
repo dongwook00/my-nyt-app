@@ -6,22 +6,20 @@
 
     &__primary {
         display: flex;
-        flex: 0 0 60%;
+        flex: 0 0 70%;
         justify-content: space-between;
         
         .article__text {
-            flex: 0 0 30%;
+            flex: 0 0 40%;
         }
 
         .article__image {
-            display: flex;
-            flex: 0 0 70%;
-            justify-content: center;
+            flex: 0 0 60%;
         }
     }
 
     &__secondary {
-        flex: 0 0 40%;
+        flex: 0 0 30%;
     }
 
 

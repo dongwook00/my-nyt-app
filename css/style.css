@@ -15,7 +15,7 @@ body {
   padding: 2.5rem; }
 
 .container {
-  max-width: 144rem;
+  max-width: 114rem;
   margin: 0 auto; }
 
 .header {
@@ -40,6 +40,12 @@ body {
   color: red;
   text-transform: uppercase; }
 
+.image__caption {
+  color: #999;
+  letter-spacing: .2px;
+  line-height: 1.4rem;
+  font-size: 1.1rem; }
+
 .menu__list {
   display: flex;
   list-style: none; }
@@ -56,13 +62,11 @@ body {
   font-size: 1.6rem; }
   .most-viewed__primary {
     display: flex;
-    flex: 0 0 60%;
+    flex: 0 0 70%;
     justify-content: space-between; }
     .most-viewed__primary .article__text {
-      flex: 0 0 30%; }
+      flex: 0 0 40%; }
     .most-viewed__primary .article__image {
-      display: flex;
-      flex: 0 0 70%;
-      justify-content: center; }
+      flex: 0 0 60%; }
   .most-viewed__secondary {
-    flex: 0 0 40%; }
+    flex: 0 0 30%; }
