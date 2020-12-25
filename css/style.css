@@ -22,22 +22,36 @@ body {
   font-size: 1.4rem;
   height: 8rem;
   background-color: #fff;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
   display: flex;
   align-items: center; }
 
 .content {
-  padding: 5rem 0;
+  padding: 4rem 0;
   display: flex; }
 
 .section__title {
   font-size: 1.8rem;
   font-weight: 700;
-  flex: 0 0 100%; }
+  flex: 0 0 100%;
+  margin-bottom: 2rem;
+  border-top: 1px solid #000; }
+  .section__title::before {
+    content: "";
+    display: block;
+    margin-top: 5px; }
+
+.article__title {
+  margin-bottom: .8rem; }
+
+.article__text {
+  padding-right: 1rem; }
 
 .article__category {
-  color: red;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e3120b;
   text-transform: uppercase; }
 
 .image__caption {
@@ -63,30 +77,29 @@ body {
   justify-content: space-between; }
   .most-viewed__primary {
     display: flex;
-    flex: 0 0 62%;
-    justify-content: space-between; }
-    .most-viewed__primary .article__text {
-      flex: 0 0 35%; }
-      .most-viewed__primary .article__text .article__title {
-        font-size: 2rem; }
-      .most-viewed__primary .article__text .article__abstract {
-        font-size: 1.4rem;
-        color: #555555; }
-    .most-viewed__primary .article__figure {
-      flex: 0 0 55%;
+    flex: 0 0 65%;
+    justify-content: space-between;
+    padding-right: 1.5rem; }
+    .most-viewed__primary .article__text .article__title {
+      font-size: 2rem; }
+    .most-viewed__primary .article__text .article__abstract {
+      font-size: 1.4rem;
+      color: #555555; }
+    .most-viewed__primary .article__photo {
       display: table; }
-      .most-viewed__primary .article__figure .image__caption {
+      .most-viewed__primary .article__photo .image__caption {
         display: table-caption;
         caption-side: bottom; }
   .most-viewed__secondary {
     flex: 0 0 35%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    padding-left: 1.5rem;
+    border-left: 1px solid #d7d7d7; }
     .most-viewed__secondary--top, .most-viewed__secondary--bottom {
-      display: flex; }
+      display: flex;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #d7d7d7; }
     .most-viewed__secondary .article__text .article__title {
+      flex: 0 0 20%;
       font-size: 1.6rem; }
-    .most-viewed__secondary .article__text .article__abstract {
-      font-size: 1.4rem;
-      color: #555555; }

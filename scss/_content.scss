@@ -7,11 +7,11 @@
 
     &__primary {
         display: flex;
-        flex: 0 0 62%;
+        flex: 0 0 65%;
         justify-content: space-between;
-        
+        padding-right: 1.5rem;
+     
         .article__text {
-            flex: 0 0 35%;
 
             & .article__title {
                 font-size: $font-size-title-primary;
@@ -19,12 +19,11 @@
 
             & .article__abstract {
                 font-size: $font-size-abstract;
-                color: $font-color-abstract;
+                color: $color-abstract;
             }
         }
 
-        .article__figure {
-            flex: 0 0 55%;
+        .article__photo {
             display: table;
 
             & .image__caption {
@@ -38,26 +37,21 @@
         flex: 0 0 35%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        padding-left: 1.5rem;
+        border-left: 1px solid $color-border-grey;
 
         &--top,
         &--bottom {
             display: flex;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid $color-border-grey;
         }
 
         & .article__text {
             & .article__title {
+                flex: 0 0 20%;
                 font-size: $font-size-title-secondary;
             }
-    
-            & .article__abstract {
-                font-size: $font-size-abstract;
-                color: $font-color-abstract;
-            }
-        }
-
-        & .article__figure {
-
         }
 
     }

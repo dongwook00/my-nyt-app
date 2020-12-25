@@ -2,10 +2,27 @@
     font-size: 1.8rem;
     font-weight: 700;
     flex: 0 0 100%;
+    margin-bottom: 2rem;
+    border-top: 1px solid $color-border-black;
+    
+    &::before {
+        content: "";
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+.article__title {
+    margin-bottom: .8rem;
+}
+.article__text {
+    padding-right: 1rem;
 }
 
 .article__category {
-    color: red;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $color-category;
     text-transform: uppercase;
 }
 

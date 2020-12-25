@@ -7,13 +7,13 @@
     font-size: 1.4rem;
     height: 8rem;
     background-color: #fff;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid $color-border-grey;
+    border-bottom: 1px solid $color-border-grey;
     display: flex;
     align-items: center;
 }
 
 .content {
-    padding: 5rem 0;
+    padding: 4rem 0;
     display: flex;
 }
