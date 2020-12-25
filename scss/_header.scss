@@ -2,6 +2,7 @@
     &__list {
         display: flex;
         list-style: none;
+        align-items: center;
     }
 
     &__list--item {
@@ -9,6 +10,11 @@
 
         & a {
             text-decoration: none;
+        }
+
+        & .logo-image {
+            display: block;
+            height: 6rem;
         }
     }
 
