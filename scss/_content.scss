@@ -3,23 +3,63 @@
     display: flex;
     flex-wrap: wrap;
     font-size: 1.6rem;
+    justify-content: space-between;
 
     &__primary {
         display: flex;
-        flex: 0 0 70%;
+        flex: 0 0 62%;
         justify-content: space-between;
         
         .article__text {
-            flex: 0 0 40%;
+            flex: 0 0 35%;
+
+            & .article__title {
+                font-size: $font-size-title-primary;
+            }
+
+            & .article__abstract {
+                font-size: $font-size-abstract;
+                color: $font-color-abstract;
+            }
         }
 
-        .article__image {
-            flex: 0 0 60%;
+        .article__figure {
+            flex: 0 0 55%;
+            display: table;
+
+            & .image__caption {
+                display: table-caption;
+                caption-side: bottom;
+            }
         }
     }
 
     &__secondary {
-        flex: 0 0 30%;
+        flex: 0 0 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &--top,
+        &--bottom {
+            display: flex;
+        }
+
+        & .article__text {
+            & .article__title {
+                font-size: $font-size-title-secondary;
+            }
+    
+            & .article__abstract {
+                font-size: $font-size-abstract;
+                color: $font-color-abstract;
+            }
+        }
+
+        & .article__figure {
+
+        }
+
     }
 
 
