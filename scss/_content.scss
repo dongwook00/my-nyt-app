@@ -37,12 +37,12 @@
         display: flex;
         flex-direction: column;
         padding-left: $padding-medium;
-        border-left: 1px solid $color-border-grey;
+        border-left: 1px solid $color-grey;
 
         &--children {
             display: flex;
             padding-bottom: $padding-medium;
-            border-bottom: 1px solid $color-border-grey;
+            border-bottom: 1px solid $color-grey;
             
             &:not(:first-child) {
                 padding-top: $padding-medium;
@@ -63,7 +63,7 @@
     
     &:hover .article__title {
         text-decoration: underline;
-        color: $color-title-hover;
+        color: $color-link-hover;
     }
  
 }

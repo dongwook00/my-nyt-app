@@ -16,3 +16,9 @@ body {
     line-height: 1.6;
     padding: 2.5rem;
 }
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: $color-black;
+}
