@@ -15,6 +15,10 @@
 .article__title {
     margin-bottom: .8rem;
 }
+.article__abstract {
+    color: $color-abstract;
+    font-size: $font-size-abstract;
+}
 .article__text {
     padding-right: 1rem;
 }

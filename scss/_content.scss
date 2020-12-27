@@ -1,3 +1,12 @@
+.article-link {
+    cursor: pointer;
+    
+    &:hover .article__title {
+        text-decoration: underline;
+        color: $color-link-hover;
+    }
+}
+
 .most-viewed {
     width: 100%;
     display: flex;
@@ -14,11 +23,6 @@
         .article__text {
             & .article__title {
                 font-size: $font-size-title-primary;
-            }
-
-            & .article__abstract {
-                font-size: $font-size-abstract;
-                color: $color-abstract;
             }
         }
 
@@ -39,10 +43,13 @@
         padding-left: $padding-medium;
         border-left: 1px solid $color-grey;
 
-        &--children {
+        &-children {
             display: flex;
             padding-bottom: $padding-medium;
-            border-bottom: 1px solid $color-grey;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $color-grey;
+            }
             
             &:not(:first-child) {
                 padding-top: $padding-medium;
@@ -55,15 +62,43 @@
                 font-size: $font-size-title-secondary;
             }
         }
+    }
+
+    &__tertiary {
+        margin-top: 1.5rem;
+        padding-top: $padding-medium;
+        display: flex;
+        border-top: 1px solid $color-grey;
+        
+        &-children {
+            display: flex;
+            padding: 0 $padding-medium;
+            border-right: 1px solid $color-grey;
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+
+        &-children--list {
+            flex: 0 0 30%;
+            padding-left: $padding-medium;
+            li {
+                font-size: 1.2rem;
+                padding: $padding-medium;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey;
+                }
+
+            }
+        }
+
+        & .article__text {
+            padding-right: 0;
+        }
+        & .article__title {
+            font-size: $font-size-title-secondary;
+        }
 
     }
-}
-.article-link {
-    cursor: pointer;
-    
-    &:hover .article__title {
-        text-decoration: underline;
-        color: $color-link-hover;
-    }
- 
 }
