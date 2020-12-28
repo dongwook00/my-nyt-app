@@ -71,7 +71,6 @@
         border-top: 1px solid $color-grey;
         
         &-children {
-            display: flex;
             padding: 0 $padding-medium;
             border-right: 1px solid $color-grey;
             &:first-child {
@@ -79,17 +78,29 @@
             }
         }
 
-        &-children--list {
+        &-extra {
             flex: 0 0 30%;
             padding-left: $padding-medium;
-            li {
-                font-size: 1.2rem;
-                padding: $padding-medium;
+            
+            &--sub {
+                display: flex;
+                padding: $padding-medium 0;
+
+                & .article__photo {
+                    margin-right: 1rem;
+                }
+                
+                & img {
+                    width: 95%;
+                }
+
+                & .article__text .article__title {
+                    font-size: 1.4rem;
+                }
 
                 &:not(:last-child) {
                     border-bottom: 1px solid $color-grey;
                 }
-
             }
         }
 
@@ -99,6 +110,7 @@
         & .article__title {
             font-size: $font-size-title-secondary;
         }
+
 
     }
 }
