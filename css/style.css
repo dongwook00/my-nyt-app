@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../assets/font/Lato-Regular.ttf); }
+
 *,
 *::before,
 *::after {
